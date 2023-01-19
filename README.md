@@ -43,7 +43,7 @@ Examples:
 - validName(“Angelina. Kesya Putri”) ➞ false // Words cannot end with a dot (only initials can)
 
 
-(2) Find All Numbers Disappeared in an Array (Logic Test)
+### 2. Find All Numbers Disappeared in an Array (Logic Test)
 
 Given an array nums of n integers where nums[i] is in the range [1, n], return an array of all the integers in the range [1, n] that do not appear in nums.
 
