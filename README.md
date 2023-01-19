@@ -1,8 +1,8 @@
 # logic-test-sprout
 
-(1) Name Validator (Logic Test)
+### 1. Name Validator (Logic Test)
 
-Write a function to validate a name,
+Write a function to validate a name
 
 Definitions:
 1. A term is either an initials or word.
@@ -23,7 +23,7 @@ The following names are “invalid”:
 * A. K. P. (last name is not a word)
 * Angelina. K. Putri (dot only allowed after initial, not word)
 
-Rules
+**Rules**
 1. Both initials and words must be capitalized.
 2. Initials must end with a dot.
 3. A name must be either 2 or 3 terms long.
@@ -32,29 +32,15 @@ Rules
 Your task is to write a function that determines whether a name is valid or not. Return true if the name is valid, false otherwise.
 
 Examples:
- validName(“A. Kesya”) ➞ true
-
-validName(“A. K. Putri) ➞ true
-
-validName(“Angelina K. Putri”) ➞ true
-
-validName(“Angelina”) ➞ false
-// Must be 2 or 3 words
-
-validName(“a. Kesya”) ➞ false
-// Incorrect capitalization
-
-validName(“A Kesya”) ➞ false
-// Missing dot after initial
-
-validName(“A. Kesya Putri”) ➞ false
-// Cannot have: initial first name + word middle name
-
-validName(“A. Kesya P.”) ➞ false
-// Last name cannot be initial
-
-validName(“Angelina. Kesya Putri”) ➞ false
-// Words cannot end with a dot (only initials can)
+- validName(“A. Kesya”) ➞ true
+- validName(“A. K. Putri) ➞ true
+- validName(“Angelina K. Putri”) ➞ true
+- validName(“Angelina”) ➞ false //Must be 2 or 3 words
+- validName(“a. Kesya”) ➞ false // Incorrect capitalization
+- validName(“A Kesya”) ➞ false // Missing dot after initial
+- validName(“A. Kesya Putri”) ➞ false // Cannot have: initial first name + word middle name
+- validName(“A. Kesya P.”) ➞ false // Last name cannot be initial
+- validName(“Angelina. Kesya Putri”) ➞ false // Words cannot end with a dot (only initials can)
 
 
 (2) Find All Numbers Disappeared in an Array (Logic Test)
@@ -67,8 +53,27 @@ Constraints:
 * 1 <= nums[i] <= n
 
 Examples:
-const nums = [4,3,2,7,8,2,3,1]
+1.  const nums = [4,3,2,7,8,2,3,1]
 findDisapperared(nums)  ➞ [5,6]
 
-const nums = [1,1]
+2. const nums = [1,1]
 findDisapperared(nums)  ➞ [2]  
+
+## Documentation
+
+Developed using TypeScript with Jest.
+
+To install:
+
+```bash
+  npm install
+  npm run build
+```
+
+To test:
+```bash
+  npm run test
+```
+## Author
+
+- [@falizhar](https://www.github.com/falizhar)
